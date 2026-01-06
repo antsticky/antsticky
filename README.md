@@ -1,3 +1,3 @@
 ## Hi there 👋
 
-![GitHub Snake](./dist/github-snake.svg)
+![GitHub Snake](./dist/github-snake-dark.svg)
