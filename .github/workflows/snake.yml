@@ -2,16 +2,19 @@ name: Generate Snake
 
 on:
   schedule:
-    - cron: "0 0 * * *" # runs every day at midnight UTC
+    - cron: "0 0 * * *"
   push:
     branches:
-        - master
-  workflow_dispatch:       # allows manual trigger
+      - master
+  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
+      - uses: actions/checkout@v4
+
       - uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
@@ -19,8 +22,10 @@ jobs:
             dist/github-snake.svg
             dist/github-snake-dark.svg?palette=github-dark
 
-      - name: Push generated files
-        uses: actions/upload-artifact@v4
-        with:
-          name: snake
-          path: dist
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add dist
+          git commit -m "update snake animation" || echo "No changes to commit"
+          git push
