@@ -10,17 +10,14 @@ My academic background includes [research](https://scholar.google.com/citations?
 My work combines mathematical thinking with practical engineering to create reliable and scalable solutions. I am currently focused on LLM architectures, high‑performance data pipelines, and clean engineering patterns for production systems.
 
 ## Repositories
-# Quantitative Finance Library  
+# Quantitative Finance Library [link](https://github.com/antsticky/qFinanceLib)
 This library implements analytical and numerical pricing methods for markets where the underlying follows a log‑normal diffusion. It compares Black–Scholes formulas with Monte‑Carlo estimators, highlighting where numerical methods diverge or align with exact solutions.
 
-# Minimal Distance Between Two Polylines  
+# Minimal Distance Between Two Polylines [link](https://github.com/antsticky/PolylineDiff)
 This C++ utility computes whether two polylines come closer than a predefined distance threshold. It provides a fast geometric check using simple vector operations and is useful for collision detection or spatial analysis tasks.
 
-# Quantitative Bridge Library  
+# Quantitative Bridge Library [link](https://github.com/antsticky/qBridgeLib)
 This package analyzes bridge games from the Hungarian Championship and similar online commentary systems by comparing a player’s result to both the field performance and the theoretical double‑dummy optimum. It includes core libraries for seating, bidding, and play simulation, as well as analytics tools that interface with online commentators and a built‑in double‑dummy solver.
 
-# Collider Pi  
-This repository explores a physics‑inspired system where the number of collisions approximates digits of π. It reproduces the classical “colliding blocks” demonstration and provides a simple simulation to visualize the phenomenon.
-
-# nextjs_vercel  
+# nextjs_vercel [link](https://nextjs-vercel-three-iota.vercel.app/)
 This project is a learning playground for building and deploying a Next.js  application on Vercel. It demonstrates basic routing, components, and hosting, available publicly at the linked deployment.
